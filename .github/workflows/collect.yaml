@@ -1,8 +1,8 @@
 name: Collect
 on:
-  # executed at 4:00 everday
+  # executed every 12 hours
   schedule:
-    - cron: "0 4 * * *"
+    - cron: "0 */12 * * *"
   workflow_dispatch:
 
 concurrency:
